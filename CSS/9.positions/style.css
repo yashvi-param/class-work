@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 300vh;
+  /* width: 300vh;
+  overflow-x: hidden; */
+}
+
+.container {
+  margin: auto;
+  height: 800px;
+  width: 800px;
+  border: 2px solid black;
+  margin-top: 50px;
+  /* position: relative; */
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.green {
+  background-color: green;
+  top: 1000px;
+  bottom: 50px;
+  right: 50px;
+  left: 100px;
+  position: static;
+}
+
+/* will be move position by taking reference of parent */
+
+.blue {
+  background-color: blue;
+  position: relative;
+  /* top: 50px; */
+  /* left: 50px; */
+  right: 80px;
+}
+
+/* will be move position when parent position property is relative if not found then it will take root element reference and will move accordingly */
+
+.red {
+  background-color: red;
+  position: absolute;
+  top: 10px;
+  /* left: 50px; */
+  /* z-index: 1; */
+}
+
+.orange {
+  background-color: orange;
+  position: fixed;
+  /* bottom: 80px; */
+  top: 50px;
+  /* z-index: 1; */
+}
+
+.purple {
+  position: sticky;
+  background-color: purple;
+  top: 50px;
+}
+
+.purple:hover {
+  background-color: cadetblue;
+  transform: scale(1.5);
+}

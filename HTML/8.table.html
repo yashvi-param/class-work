@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table with rowspan and colspan</title>
+    <style>
+        table,
+        th,
+        tr,
+        td {
+            border:1px solid black;
+     }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Heading</th>
+                <th>Students</th>
+                <th colspan="2">Details</th>
+            </tr>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Roll Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">Student List</td>
+                <td>1</td>
+                <td>John Doe</td>
+                <td>Computer Science</td>
+                <td>CS101</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+                <td>Mathematics</td>
+                <td>MA101</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Emily Johnson</td>
+                <td>Physics</td>
+                <td>PH101</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Michael Brown</td>
+                <td>Chemistry</td>
+                <td>CH101</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
